@@ -3,6 +3,9 @@ class TodolistsController < ApplicationController
     @list = List.new
   end
   
+  def index
+  end
+  
   def create
     list = List.new(list_params)
     list.save
